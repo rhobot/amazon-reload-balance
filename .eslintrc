@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+  },
+  "rules": {
+    "no-console": 1,
+    "no-constant-condition": 2,
+    "no-var": 2
+  }
+}

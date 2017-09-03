@@ -2,8 +2,11 @@
   "name": "amazon-reload-balance",
   "version": "0.0.0",
   "description": "Reload your Amazon's balance with your card",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "npm run remove-dist && babel src -d dist",
+    "lint": "eslint index.js src/**",
+    "remove-dist": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +27,13 @@
   "bugs": {
     "url": "https://github.com/rhobot/amazon-reload-balance/issues"
   },
-  "homepage": "https://github.com/rhobot/amazon-reload-balance#readme"
+  "homepage": "https://github.com/rhobot/amazon-reload-balance#readme",
+  "engines": {
+    "node": ">=4.x"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.6.1"
+  }
 }
