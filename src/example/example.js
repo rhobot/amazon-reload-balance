@@ -1,4 +1,5 @@
 import {AmazonReloadBalance} from '../';
+import localConfig from '../../config/local.json';
 
 const amazonReloadBalance = new AmazonReloadBalance();
-amazonReloadBalance.signIn('hello', 'world');
+amazonReloadBalance.signIn(localConfig.email, localConfig.password);

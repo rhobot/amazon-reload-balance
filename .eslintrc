@@ -6,9 +6,8 @@
   "parserOptions": {
     "sourceType": "module",
   },
+  "extends": "eslint:recommended",
   "rules": {
-    "no-console": 1,
-    "no-constant-condition": 2,
-    "no-var": 2
+    "no-console": 0
   }
 }

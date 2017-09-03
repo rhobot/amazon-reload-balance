@@ -22,6 +22,17 @@ await amazonReloadBalance.reload(15.75, 'last 4 digits of your card number');
 await amazonReloadBalance.signOut();
 ```
 
+For running the example:
+
+1. create `/config/local.json` and fill out values like this:
+
+```json
+{
+  "email": "your email on Amazon",
+  "password": "your password"
+}
+```
+
 
 ## Requirements
 
@@ -30,7 +41,7 @@ Intended to be run on Node 4.x or higher as a requirement of Nightmare.
 ## Why did you build this?
 
 Sometimes you want to automate reloading Amazon balance :)
-In addition, I wanted to try out Nightmare and Vue.
+In addition, I wanted to try out Nightmare, Vue, and Jest.
 
 ## License
 
