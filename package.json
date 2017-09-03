@@ -4,9 +4,10 @@
   "description": "Reload your Amazon's balance with your card",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npm run remove-dist && babel src -d dist",
+    "build": "npm run clean && babel src -d dist",
     "lint": "eslint index.js src/**",
-    "remove-dist": "rm -rf dist",
+    "clean": "rm -rf dist",
+    "example": "npm run build && node dist/example/example.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,5 +36,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "eslint": "^4.6.1"
+  },
+  "dependencies": {
+    "nightmare": "^2.10.0"
   }
 }

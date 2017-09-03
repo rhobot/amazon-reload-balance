@@ -8,7 +8,20 @@ Reload your Amazon's account balance with your credit/debit cards.
 
 ## Usage
 
-Work in Progress
+```js
+import {AmazonReloadBalance} from 'amazon-reload-balance';
+
+const amazonReloadBalance = new AmazonReloadBalance();
+await amazonReloadBalance.signIn('username', 'password');
+
+// The credit card you would like to use should be already registered on your Amazon account.
+// Minimum amount is 0.50
+await amazonReloadBalance.reload(20.00, 'last 4 digits of your card number');
+await amazonReloadBalance.reload(15.75, 'last 4 digits of your card number');
+
+await amazonReloadBalance.signOut();
+```
+
 
 ## Requirements
 
