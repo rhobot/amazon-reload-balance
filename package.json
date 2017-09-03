@@ -1,0 +1,28 @@
+{
+  "name": "amazon-reload-balance",
+  "version": "0.0.0",
+  "description": "Reload your Amazon's balance with your card",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhobot/amazon-reload-balance.git"
+  },
+  "keywords": [
+    "amazon",
+    "balance",
+    "reload",
+    "credit",
+    "debit",
+    "card",
+    "automate"
+  ],
+  "author": "Ryan Rho",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/rhobot/amazon-reload-balance/issues"
+  },
+  "homepage": "https://github.com/rhobot/amazon-reload-balance#readme"
+}
