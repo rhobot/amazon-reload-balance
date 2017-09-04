@@ -33,16 +33,22 @@ For running the example:
 }
 ```
 
-
 ## Requirements
 
 Intended to be run on Node 4.x or higher as a requirement of Nightmare.
 
 ## Why did you build this?
 
-Sometimes you want to automate reloading Amazon balance :)
+Sometimes you just want to automate reloading Amazon balance, right? :)
 
-In addition, I wanted to try out Nightmare, Vue, Jest, and no semicolons.
+I've been optimizing my micro management of my life and one of them is periodically
+using ~20 of my unused credit cards to prevent them from being closed. Otherwise, it would negatively affect my credit score.
+One option is to pay one item with each of them, such as utilities and cellphone bill.
+But I wanted to optimize more to collect more credit card points.
+I found that you can reload your Amazon balance as low as 50 cents,
+so I've been reloading the balance with all of my unused credit cards.
+
+In addition, I wanted to try out Nightmare, Vue, Jest, and no semicolons in this module, and AWS lambda with scheduled events for periodically reloading my Amazon balance.
 
 ## License
 
