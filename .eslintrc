@@ -3,11 +3,14 @@
     "node": true,
     "es6": true
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "sourceType": "module",
   },
   "extends": "eslint:recommended",
   "rules": {
-    "no-console": 0
+    "no-console": 0,
+    "quotes": [2, "single"],
+    "semi": [1, "never"]
   }
 }

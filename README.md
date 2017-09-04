@@ -41,7 +41,8 @@ Intended to be run on Node 4.x or higher as a requirement of Nightmare.
 ## Why did you build this?
 
 Sometimes you want to automate reloading Amazon balance :)
-In addition, I wanted to try out Nightmare, Vue, and Jest.
+
+In addition, I wanted to try out Nightmare, Vue, Jest, and no semicolons.
 
 ## License
 
