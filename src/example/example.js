@@ -11,12 +11,12 @@ import localConfig from '../../config/local.json'
   }
 
   if (Array.isArray(localConfig.reloads)) {
-    for (const {amount, cardLast4Digits} of localConfig.reloads) {
-      const isReloaded = await amazonReloadBalance.reload(amount, cardLast4Digits)
+    for (const {amount, cardNumber} of localConfig.reloads) {
+      const isReloaded = await amazonReloadBalance.reload(amount, cardNumber)
 
       if (!isReloaded) {
         const amountString = amount.toFixed(2)
-        console.error(`Unabled to reload $${amountString} with card ending in ${cardLast4Digits}`)
+        console.error(`Unabled to reload $${amountString} with card ending in ${cardNumber}`)
       }
     }
   }

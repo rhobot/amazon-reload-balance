@@ -19,10 +19,10 @@ if (!isSignedIn) {
   return
 }
 
-// The credit card you would like to use should be already registered on your Amazon account.
+// The credit/debit card you would like to use should be already registered on your Amazon account.
 // Minimum amount is 0.50
-await amazonReloadBalance.reload(20.00, 'last 4 digits of your card number')
-await amazonReloadBalance.reload(15.75, 'last 4 digits of your card number')
+await amazonReloadBalance.reload(20.00, 'card number 1')
+await amazonReloadBalance.reload(15.75, 'card number 2')
 
 await amazonReloadBalance.signOut()
 ```
@@ -34,7 +34,11 @@ For running the example:
 ```json
 {
   "email": "your email on Amazon",
-  "password": "your password"
+  "password": "your password",
+  "reloads": [
+    {"amount": 0.50, "cardNumber": "123456789012"},
+    {"amount": 1.25, "cardNumber": "777777777777"}
+  ]
 }
 ```
 
@@ -42,7 +46,9 @@ For running the example:
 
 Intended to be run on Node 4.x or higher as a requirement of Nightmare.
 
-## Why did you build this?
+## FAQ
+
+### Why did you build this?
 
 Sometimes you just want to automate reloading Amazon balance, right? :)
 
