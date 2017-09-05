@@ -1,10 +1,8 @@
-# Work in progress
-
---------
-
 # Amazon Reload Balance
 
 Reload your Amazon's account balance with your credit/debit cards in Node.
+
+![amazon-reload-balance](https://user-images.githubusercontent.com/872220/30046500-0d8b20d4-91c0-11e7-914b-331ab410e5ec.gif)
 
 ## Usage
 
