@@ -118,7 +118,7 @@ export default class AmazonReloadBalance {
         .type(amountInputSelector, amount.toFixed(2))
         .evaluate(reloadButtonSelector => document.querySelector(reloadButtonSelector).innerText, reloadButtonSelector)
 
-      if (reloadButtonText !== `Reload $${amount.toFixed(2)}`) {
+      if (!reloadButtonText.includes(`Reload $${amount.toFixed(2)}`)) {
         throw new Error(`Reload button text is different from expected. To be safe, aborting. Actual text: ${reloadButtonText}`)
       }
 
