@@ -52,14 +52,13 @@ Sometimes you just want to automate reloading Amazon balance, right? :)
 
 I've been optimizing the micro management of my life and one of them is periodically
 using ~20 of my unused credit cards to prevent them from being closed. Otherwise, it would negatively affect my credit score.
-One option is to pay one item with each of them, such as utilities and cellphone.
-But I wanted to optimize it more in order to collect more credit card points.
+But still I wanted to pay little amounts with my unused credit cards.
 
 I found that you can reload your Amazon balance as low as 50 cents,
-so I've been reloading the balance with all of my unused credit cards.
-To simplify the tedious work, I wanted to automate reloading Amazon balance.
+so I've been reloading it with all of my unused credit cards each month.
+I wanted to automate this to simplify this tedious work.
 
-In addition, I wanted to try out Nightmare, Vue, Jest, and no semicolons in this module,
+In addition, I wanted to try out Nightmare, Vue, Jest, and no semicolons in this package,
 and AWS lambda with scheduled events for periodically reloading my Amazon balance.
 
 ## Caveat
