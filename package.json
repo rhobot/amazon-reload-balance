@@ -1,6 +1,6 @@
 {
   "name": "amazon-reload-balance",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Reload your Amazon's balance with your card",
   "main": "dist/index.js",
   "scripts": {
