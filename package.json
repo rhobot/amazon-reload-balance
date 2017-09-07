@@ -8,7 +8,8 @@
     "lint": "eslint src/**",
     "clean": "rm -rf dist",
     "example": "npm run build && node dist/example/example.js",
-    "test": "npm run build && jest"
+    "test": "npm run build && jest",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
