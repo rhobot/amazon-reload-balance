@@ -4,12 +4,12 @@
   "description": "Reload your Amazon's balance with your card",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npm run clean && babel src -d dist --source-maps",
+    "build": "yarn clean && babel src -d dist --source-maps",
     "lint": "eslint src/**",
     "clean": "rm -rf dist",
-    "example": "npm run build && node dist/example/example.js",
-    "test": "npm run build && jest",
-    "postinstall": "npm run build"
+    "example": "yarn build && node dist/example/example.js",
+    "test": "yarn build && jest",
+    "postinstall": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,8 @@
   },
   "homepage": "https://github.com/rhobot/amazon-reload-balance#readme",
   "engines": {
-    "node": ">=4.x"
+    "node": ">=4.x",
+    "yarn": "1.6.0"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
