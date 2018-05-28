@@ -1,4 +1,4 @@
-import { AmazonReloadBalance } from "../dist";
+const { AmazonReloadBalance } = require("../src");
 
 describe("Sign-in input validation", () => {
   test("no input", () => {

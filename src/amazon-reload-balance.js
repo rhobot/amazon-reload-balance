@@ -1,11 +1,11 @@
-import Nightmare from "nightmare";
+const Nightmare = require("nightmare");
 
 const urls = {
   homepage: "https://www.amazon.com",
   reloadOrder: "https://www.amazon.com/asv/reload/order"
 };
 
-export default class AmazonReloadBalance {
+module.exports = class AmazonReloadBalance {
   static validateSignInInputs(email, password) {
     if (!email) {
       console.error("email must be specified");
@@ -175,4 +175,4 @@ export default class AmazonReloadBalance {
       return [];
     }
   }
-}
+};

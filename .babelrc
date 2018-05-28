@@ -1,7 +1,0 @@
-{
-  "presets": ["babel-preset-es2015"],
-  "plugins": [
-    "transform-async-to-generator",
-    "transform-runtime"
-  ]
-}

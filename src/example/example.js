@@ -1,5 +1,5 @@
-import { AmazonReloadBalance } from "../";
-import localConfig from "../../config/local.json";
+const { AmazonReloadBalance } = require("../");
+const { localConfig } = require("../../config/local.json");
 
 (async function main() {
   const amazonReloadBalance = new AmazonReloadBalance();
