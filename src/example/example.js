@@ -1,5 +1,5 @@
 const { AmazonReloadBalance } = require("../");
-const { localConfig } = require("../../config/local.json");
+const localConfig = require("../../config/local.json");
 
 (async function main() {
   const amazonReloadBalance = new AmazonReloadBalance();
